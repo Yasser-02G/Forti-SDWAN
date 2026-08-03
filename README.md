@@ -80,8 +80,6 @@ Forti-SDWAN/
 > The original Word draft (`SDWAN.docx`) used while building the
 > configuration is intentionally **not** versioned in this repo: its
 > content was reviewed, corrected, and turned into shell scripts under
-> `Config/` and `Tests/` (see [Config/README.md](Config/README.md) for
-> the full list of corrections applied).
 
 ## Prerequisites
 
@@ -140,9 +138,6 @@ Run them all with `Tests/run-all-tests.sh <forticasa-ip> <fortidakar-ip>`.
 - Never commit real secrets (PSK, admin passwords) to this repository.
   Use a local `.env` file (ignored via `.gitignore`) or a secrets
   manager for real deployments.
-- The original draft used the deprecated `des-sha256` IPsec proposal;
-  all scripts in this repo use `aes256-sha256` instead (see
-  [Config/README.md](Config/README.md) for details).
 
 ## Roadmap / possible improvements
 
